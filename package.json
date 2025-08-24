@@ -1,0 +1,59 @@
+{
+  "name": "codesnippetritthick",
+  "publisher": "opgravitex",
+  "displayName": "Code Snippet | Ritthick Thiaga",
+  "description": "Share snippets of your code using paste bin API",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeSnippet.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "codeSnippet.newExtension",
+        "title": "New Extension!!!!"
+      },
+      {
+        "command": "codeSnippet.currentTime",
+        "title": "Current Time"
+      },
+      {
+        "command": "codeSnippet.codeSnippet",
+        "title": "Run Code Snippet (Link Never Expires)"
+      },
+      {
+        "command": "codeSnippet.codeSnippet10M",
+        "title": "Run Code Snippet (Link Expires after 10 Minutes)"
+      },
+      {
+        "command": "codeSnippet.codeSnippet1D",
+        "title": "Run Code Snippet (Link Expires after 1 Day)"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.103.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.32.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  }
+}
